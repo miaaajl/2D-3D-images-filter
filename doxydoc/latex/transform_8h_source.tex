@@ -1,0 +1,26 @@
+\doxysection{transform.\+h}
+\hypertarget{transform_8h_source}{}\label{transform_8h_source}\index{include/utils/transform.h@{include/utils/transform.h}}
+\mbox{\hyperlink{transform_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ TRANSFORM\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ TRANSFORM\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <cstdint>}\ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{comment}{//\ Converts\ an\ RGB\ color\ to\ HSV.}}
+\DoxyCodeLine{00013\ \textcolor{comment}{//\ RGB\ values\ are\ in\ the\ range\ [0,\ 255].\ H\ is\ in\ [0,\ 360],\ S\ and\ V\ are\ in\ [0,\ 1].}}
+\DoxyCodeLine{00014\ std::tuple<float,\ float,\ float>\ \mbox{\hyperlink{transform_8h_acd08a9ab70c593ff7652b27d3637df26}{convertToHSV}}(uint8\_t\ r,\ uint8\_t\ g,\ uint8\_t\ b);}
+\DoxyCodeLine{00015\ \textcolor{comment}{//\ Converts\ an\ HSV\ color\ back\ to\ RGB.}}
+\DoxyCodeLine{00016\ std::tuple<uint8\_t,\ uint8\_t,\ uint8\_t>\ \mbox{\hyperlink{transform_8h_a3b59890f27d4e93c6c0f267520bfe62d}{convertFromHSV}}(\textcolor{keywordtype}{float}\ h,\ \textcolor{keywordtype}{float}\ s,\ \textcolor{keywordtype}{float}\ v);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{comment}{//\ Converts\ an\ RGB\ color\ to\ HSL.}}
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ RGB\ values\ are\ in\ the\ range\ [0,\ 255].\ H\ is\ in\ [0,\ 360],\ S\ and\ L\ are\ in\ [0,\ 1].}}
+\DoxyCodeLine{00020\ std::tuple<float,\ float,\ float>\ \mbox{\hyperlink{transform_8h_a280d4737f8b117790286bfd1ba3f65fe}{convertToHSL}}(uint8\_t\ r,\ uint8\_t\ g,\ uint8\_t\ b);}
+\DoxyCodeLine{00021\ \textcolor{comment}{//\ Converts\ an\ HSL\ color\ back\ to\ RGB.}}
+\DoxyCodeLine{00022\ std::tuple<uint8\_t,\ uint8\_t,\ uint8\_t>\ \mbox{\hyperlink{transform_8h_ae653d535d43b406275179e6ae2562d23}{convertFromHSL}}(\textcolor{keywordtype}{float}\ h,\ \textcolor{keywordtype}{float}\ s,\ \textcolor{keywordtype}{float}\ l);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TRANSFORM\_H}}
+
+\end{DoxyCode}

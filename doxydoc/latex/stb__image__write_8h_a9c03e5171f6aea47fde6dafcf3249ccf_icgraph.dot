@@ -1,0 +1,36 @@
+digraph "stbi_write_png"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="stbi_write_png",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge16_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="Volume::Volume",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_volume.html#ab1ff84731290c0ca8c0c6800cb502407",tooltip=" "];
+  Node1 -> Node3 [id="edge17_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="Image::write",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_image.html#af8acd25fe089ef63f9d0305f1664f44d",tooltip=" "];
+  Node3 -> Node4 [id="edge18_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="Interface::apply2DImageProcessing",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_interface.html#ab6e0b92a0ca2133f4d9f23c8ba5af747",tooltip=" "];
+  Node4 -> Node5 [id="edge19_Node000004_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="Interface::runInterface",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_interface.html#a650f0750e1608aae7f62768d6e7b8bef",tooltip=" "];
+  Node3 -> Node6 [id="edge20_Node000003_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="Interface::applyProjection\lSlicing",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_interface.html#a4c48c99894054f6c486709ab518fc8b5",tooltip=" "];
+  Node6 -> Node7 [id="edge21_Node000006_Node000007",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="Interface::apply3DImageProcessing",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_interface.html#a960b8ee2251b1a7289382f2548cdca91",tooltip=" "];
+  Node7 -> Node5 [id="edge22_Node000007_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node8 [id="edge23_Node000003_Node000008",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="test_histogram_equalisation\l_filter",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$histogram__equalisation__test_8cpp.html#a20354280cffc641e1fa82bf4f398c484",tooltip=" "];
+  Node8 -> Node9 [id="edge24_Node000008_Node000009",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="run_histogram_equalisation_test",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$histogram__equalisation__test_8cpp.html#a8c633257161cb6e7d9e497057139ff7c",tooltip=" "];
+  Node9 -> Node10 [id="edge25_Node000009_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$run__tests_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627",tooltip=" "];
+  Node3 -> Node11 [id="edge26_Node000003_Node000011",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="test_write",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$image__test_8cpp.html#a3e839bfce8b2995e443d909cba8199d9",tooltip=" "];
+  Node11 -> Node12 [id="edge27_Node000011_Node000012",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="run_image_test",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$image__test_8cpp.html#a10a27090689efc45851260d6ee9d6726",tooltip=" "];
+  Node12 -> Node10 [id="edge28_Node000012_Node000010",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node13 [id="edge29_Node000001_Node000013",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="Slice::write_slice",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_slice.html#ae18d9068b92f4fbe0e4158929b8450bb",tooltip=" "];
+  Node13 -> Node6 [id="edge30_Node000013_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+}

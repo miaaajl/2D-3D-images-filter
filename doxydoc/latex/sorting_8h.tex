@@ -1,0 +1,61 @@
+\doxysection{include/utils/sorting.h File Reference}
+\hypertarget{sorting_8h}{}\label{sorting_8h}\index{include/utils/sorting.h@{include/utils/sorting.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+Include dependency graph for sorting.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ uint8\+\_\+t $>$ \mbox{\hyperlink{sorting_8h_ab6e42897bbaab03fa855ca209ce1589d}{counting\+\_\+sort}} (std\+::vector$<$ uint8\+\_\+t $>$ input)
+\item 
+int \mbox{\hyperlink{sorting_8h_a122477ff017bfcc1520ede811b14a64e}{partition}} (std\+::vector$<$ std\+::string $>$ \&files, int low, int high)
+\item 
+void \mbox{\hyperlink{sorting_8h_aa242830da11f96530483a982e4dd2636}{insertion\+\_\+sort}} (std\+::vector$<$ std\+::string $>$ \&files)
+\item 
+void \mbox{\hyperlink{sorting_8h_a3a85cc153019c55732188ca76ffd3c9b}{quick\+\_\+sort}} (std\+::vector$<$ std\+::string $>$ \&files, int low, int high)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{sorting_8h_ab6e42897bbaab03fa855ca209ce1589d}\label{sorting_8h_ab6e42897bbaab03fa855ca209ce1589d} 
+\index{sorting.h@{sorting.h}!counting\_sort@{counting\_sort}}
+\index{counting\_sort@{counting\_sort}!sorting.h@{sorting.h}}
+\doxysubsubsection{\texorpdfstring{counting\_sort()}{counting\_sort()}}
+{\footnotesize\ttfamily std\+::vector$<$ uint8\+\_\+t $>$ counting\+\_\+sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ uint8\+\_\+t $>$}]{input}{}\end{DoxyParamCaption})}
+
+Group\+: Binary Search Authors\+: Benedict Grey (edsml-\/bpg23) Counting sort algorithm implemented due to speed and constrained values (0-\/255), reducing memory impact
+
+Group\+: Binary Search Authors\+: Benedict Grey (edsml-\/bpg23) Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{sorting_8h_aa242830da11f96530483a982e4dd2636}\label{sorting_8h_aa242830da11f96530483a982e4dd2636} 
+\index{sorting.h@{sorting.h}!insertion\_sort@{insertion\_sort}}
+\index{insertion\_sort@{insertion\_sort}!sorting.h@{sorting.h}}
+\doxysubsubsection{\texorpdfstring{insertion\_sort()}{insertion\_sort()}}
+{\footnotesize\ttfamily void insertion\+\_\+sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{files}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 3
+\Hypertarget{sorting_8h_a122477ff017bfcc1520ede811b14a64e}\label{sorting_8h_a122477ff017bfcc1520ede811b14a64e} 
+\index{sorting.h@{sorting.h}!partition@{partition}}
+\index{partition@{partition}!sorting.h@{sorting.h}}
+\doxysubsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily int partition (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{files}{, }\item[{int}]{low}{, }\item[{int}]{high}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 4
+Here is the caller graph for this function\+:
+% FIG 5
+\Hypertarget{sorting_8h_a3a85cc153019c55732188ca76ffd3c9b}\label{sorting_8h_a3a85cc153019c55732188ca76ffd3c9b} 
+\index{sorting.h@{sorting.h}!quick\_sort@{quick\_sort}}
+\index{quick\_sort@{quick\_sort}!sorting.h@{sorting.h}}
+\doxysubsubsection{\texorpdfstring{quick\_sort()}{quick\_sort()}}
+{\footnotesize\ttfamily void quick\+\_\+sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{files}{, }\item[{int}]{low}{, }\item[{int}]{high}{}\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+% FIG 6
+Here is the caller graph for this function\+:
+% FIG 7

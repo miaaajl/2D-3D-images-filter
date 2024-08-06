@@ -1,0 +1,55 @@
+\doxysection{lib/utils/transform.cpp File Reference}
+\hypertarget{transform_8cpp}{}\label{transform_8cpp}\index{lib/utils/transform.cpp@{lib/utils/transform.cpp}}
+{\ttfamily \#include "{}utils/transform.\+h"{}}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for transform.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::tuple$<$ float, float, float $>$ \mbox{\hyperlink{transform_8cpp_acd08a9ab70c593ff7652b27d3637df26}{convert\+To\+HSV}} (uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\item 
+std\+::tuple$<$ uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t $>$ \mbox{\hyperlink{transform_8cpp_a3b59890f27d4e93c6c0f267520bfe62d}{convert\+From\+HSV}} (float h, float s, float v)
+\item 
+std\+::tuple$<$ float, float, float $>$ \mbox{\hyperlink{transform_8cpp_a280d4737f8b117790286bfd1ba3f65fe}{convert\+To\+HSL}} (uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+\item 
+std\+::tuple$<$ uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t $>$ \mbox{\hyperlink{transform_8cpp_ae653d535d43b406275179e6ae2562d23}{convert\+From\+HSL}} (float h, float s, float l)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{transform_8cpp_ae653d535d43b406275179e6ae2562d23}\label{transform_8cpp_ae653d535d43b406275179e6ae2562d23} 
+\index{transform.cpp@{transform.cpp}!convertFromHSL@{convertFromHSL}}
+\index{convertFromHSL@{convertFromHSL}!transform.cpp@{transform.cpp}}
+\doxysubsubsection{\texorpdfstring{convertFromHSL()}{convertFromHSL()}}
+{\footnotesize\ttfamily std\+::tuple$<$ uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t $>$ convert\+From\+HSL (\begin{DoxyParamCaption}\item[{float}]{h}{, }\item[{float}]{s}{, }\item[{float}]{l}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 1
+\Hypertarget{transform_8cpp_a3b59890f27d4e93c6c0f267520bfe62d}\label{transform_8cpp_a3b59890f27d4e93c6c0f267520bfe62d} 
+\index{transform.cpp@{transform.cpp}!convertFromHSV@{convertFromHSV}}
+\index{convertFromHSV@{convertFromHSV}!transform.cpp@{transform.cpp}}
+\doxysubsubsection{\texorpdfstring{convertFromHSV()}{convertFromHSV()}}
+{\footnotesize\ttfamily std\+::tuple$<$ uint8\+\_\+t, uint8\+\_\+t, uint8\+\_\+t $>$ convert\+From\+HSV (\begin{DoxyParamCaption}\item[{float}]{h}{, }\item[{float}]{s}{, }\item[{float}]{v}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 2
+\Hypertarget{transform_8cpp_a280d4737f8b117790286bfd1ba3f65fe}\label{transform_8cpp_a280d4737f8b117790286bfd1ba3f65fe} 
+\index{transform.cpp@{transform.cpp}!convertToHSL@{convertToHSL}}
+\index{convertToHSL@{convertToHSL}!transform.cpp@{transform.cpp}}
+\doxysubsubsection{\texorpdfstring{convertToHSL()}{convertToHSL()}}
+{\footnotesize\ttfamily std\+::tuple$<$ float, float, float $>$ convert\+To\+HSL (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{r}{, }\item[{uint8\+\_\+t}]{g}{, }\item[{uint8\+\_\+t}]{b}{}\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+% FIG 3
+\Hypertarget{transform_8cpp_acd08a9ab70c593ff7652b27d3637df26}\label{transform_8cpp_acd08a9ab70c593ff7652b27d3637df26} 
+\index{transform.cpp@{transform.cpp}!convertToHSV@{convertToHSV}}
+\index{convertToHSV@{convertToHSV}!transform.cpp@{transform.cpp}}
+\doxysubsubsection{\texorpdfstring{convertToHSV()}{convertToHSV()}}
+{\footnotesize\ttfamily std\+::tuple$<$ float, float, float $>$ convert\+To\+HSV (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{r}{, }\item[{uint8\+\_\+t}]{g}{, }\item[{uint8\+\_\+t}]{b}{}\end{DoxyParamCaption})}
+
+Group\+: Binary Search Authors\+: Ningxin Li (acse-\/nl1423) Here is the caller graph for this function\+:
+% FIG 4
